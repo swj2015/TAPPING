@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/__004"
+    tools:context=".view.SignupActivity">
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="49dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="346dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/banktext"
+        android:layout_width="243dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="25dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/font1"
+        android:gravity="top|center_vertical"
+        android:autoSizeTextType="uniform"
+
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bankpw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bankpw"
+        android:layout_width="241dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="34dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:autoSizeTextType="uniform"
+
+        android:inputType="numberPassword"
+
+        android:textSize="30sp"
+        android:gravity="top|center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banktext" />
+
+    <Button
+        android:id="@+id/bankbutton"
+        android:layout_width="234dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="245dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankpw"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="319dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="122dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

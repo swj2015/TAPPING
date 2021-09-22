@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/__001"
+    tools:context=".view.SignupActivity">
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="346dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nametext"
+        android:layout_width="176dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/font1"
+        android:gravity="top"
+        android:inputType="textPersonName"
+        android:autoSizeTextType="uniform"
+
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/phonetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phonetext"
+        android:layout_width="211dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="26dp"
+        android:background="#00FFFFFF"
+        android:autoSizeTextType="uniform"
+
+        android:ems="10"
+        android:fontFamily="@font/font1"
+        android:gravity="top"
+        android:inputType="number"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametext" />
+
+    <EditText
+        android:id="@+id/certtext"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="46dp"
+        android:background="#00FFFFFF"
+        android:autoSizeTextType="uniform"
+
+        android:ems="10"
+        android:fontFamily="@font/font1"
+        android:gravity="top"
+        android:inputType="number"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certbutton" />
+
+    <Button
+        android:id="@+id/certbutton"
+        android:layout_width="229dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="18dp"
+        android:background="#00FFFFFF"
+
+        app:layout_constraintBottom_toTopOf="@+id/certtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonetext" />
+
+
+
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="319dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="123dp"
+        android:background="#00FFFFFF"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/certt"
+        android:layout_width="166dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="101dp"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

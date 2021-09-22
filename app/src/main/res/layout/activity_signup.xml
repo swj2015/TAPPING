@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/__3"
+    tools:context=".view.SignupActivity">
+
+
+    <EditText
+        android:id="@+id/idtext"
+        android:layout_width="189dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="59dp"
+        android:autofillHints="username"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/font1"
+        android:gravity="top"
+        android:inputType="textPersonName"
+        android:autoSizeTextType="uniform"
+
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pwtext"
+        android:layout_width="187dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="33dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:autoSizeTextType="uniform"
+
+
+        android:gravity="top"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/pwtext2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idtext" />
+
+    <EditText
+        android:id="@+id/pwtext2"
+        android:layout_width="188dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="58dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:autoSizeTextType="uniform"
+
+        android:gravity="top"
+        android:inputType="textPassword"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwtext" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="313dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="160dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="408dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="119dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwtext2"
+        app:srcCompat="@drawable/__next" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

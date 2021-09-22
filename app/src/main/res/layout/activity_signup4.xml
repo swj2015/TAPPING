@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/__006"
+    tools:context=".view.SignupActivity">
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="346dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/addname"
+        android:layout_width="244dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="22dp"
+        android:autoSizeTextType="uniform"
+
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/address1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/address1"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="29dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/font1"
+        android:gravity="top"
+        android:autoSizeTextType="uniform"
+
+        android:inputType="textPostalAddress"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addname" />
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="235dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="41dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address1" />
+
+    <EditText
+        android:id="@+id/address2"
+        android:layout_width="243dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="183dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:autoSizeTextType="uniform"
+
+        android:textSize="30sp"
+        android:gravity="top"
+        android:fontFamily="@font/font1"
+        app:layout_constraintBottom_toTopOf="@+id/signupbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbutton" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="318dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="124dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
